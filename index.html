@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap');
+
+    /* Présentation - image à gauche, texte à droite, 5% de marge des deux côtés */
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Inter', sans-serif;
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        color: #2c3e50;
+        line-height: 1.6;
+    }
+
+    h1 {
+        font-family: 'Roboto', serif;
+        font-size: 3em;
+        margin: 0 0 0.5em 0;
+        color: #1a1a1a;
+        font-weight: 700;
+    }
+
+    h2 {
+        font-family: 'Roboto', serif;
+        font-size: 2em;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+        color: #2c3e50;
+        border-bottom: 3px solid #3498db;
+        padding-bottom: 0.5em;
+    }
+
+    h3 {
+        font-family: 'Roboto', serif;
+        color: #2c3e50;
+        font-size: 1.5em;
+    }
+
+    a {
+        color: #3498db;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    a:hover {
+        color: #2980b9;
+        text-decoration: underline;
+    }
+
+    .presentation-container {
+        display: flex;
+        align-items: center;
+        margin: 3em;
+        gap: 40px;
+        text-align: justify;
+        background: white;
+        padding: 3em;
+        border-radius: 15px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .left_pres {
+        flex-shrink: 0;
+    }
+
+    .left_pres img {
+        border-radius: 15px;
+        box-shadow: 0 8px 25px rgba(52, 152, 219, 0.3);
+        transition: transform 0.3s ease;
+    }
+
+    .right_pres {
+        flex: 1;
+    }
+
+    .contact-info {
+        display: flex;
+        gap: 15px;
+        margin: 1.5em 0;
+        flex-wrap: wrap;
+        font-size: 0.95em;
+    }
+
+    .contact-info a {
+        padding: 0.5em 1em;
+        background: #ecf0f1;
+        border-radius: 25px;
+        transition: all 0.3s ease;
+    }
+
+    .contact-info a:hover {
+        background: #3498db;
+        color: white;
+    }
+
+    /* Reste de la page - 10% de marge sur les côtés */
+    .object {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 2em;
+        display: flex;
+        gap: 30px;
+        background: white;
+        padding: 2em;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+    }
+
+    .object:hover {
+        box-shadow: 0 10px 40px rgba(52, 152, 219, 0.15);
+    }
+
+    .object .left {
+        flex-shrink: 0;
+    }
+
+    .object .left img {
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .object .right {
+        flex: 1;
+    }
+
+    .object p {
+        color: #555;
+        margin: 0.5em 0;
+    }
+
+    /* Images dans les liens - encadrées au survol */
+    a img {
+        transition: border 0.3s ease, box-shadow 0.3s ease;
+        border: 2px solid transparent;
+    }
+
+    a:hover img {
+        border: 3px solid #3498db;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+    }
+</style>
+
+<head>
+    <meta name="author" content="Fétiveau Steve">
+    <meta name="author-url" content="https://sfetiveau.github.io">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fétiveau Steve</title>
+</head>
+
+
+<body>
+    <div class="presentation-container">
+        <div class="left_pres">
+            <img src="img/moi.jpeg" alt="Steve Fétiveau" width="250">
+        </div>
+        <div class="right_pres">
+            <h1>Fétiveau Steve</h1>
+            <p class="contact-info">
+                <a href="mailto:steve.fetiveau@inria.fr">Professional Contact</a>
+                <a href="mailto:fetiveau.steve@gmail.com"> Personal Contact</a>
+                <a href="https://www.github.com/sfetiveau"> GitHub</a>
+                <a href="https://www.linkedin.com/in/steve-fétiveau-146674296/"> LinkedIn</a>
+            </p>
+            <p>I am a first-year PhD student in the Titane team at Inria Sophia Antipolis, France.
+                My research is a joint project between <a href="https://team.inria.fr/titane/team/">Inria</a>,
+                under the supervision of <a href="https://www-sop.inria.fr/members/Florent.Lafarge/">Florent
+                    Lafarge</a>,
+                and <a href="https://www.brgm.fr/">BRGM</a>, under the supervision of Simon Lopez.
+                My work focuses on reconstructing multiple 3D models from implicit representations, with a particular
+                interest in geological applications.
+                <br><br>
+                I graduated from the University of Poitiers in 2025 with a Master's degree in Computer Science
+                (EUR Software Design and Development), with a focus on computer graphics.
+                I completed my final internship at XLIM (3 months) and the Nagoya Institute of Technology (2 months),
+                working on reconstructing 3D models of grains from multiple scans taken at different times.
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+    <h2>Publications</h2>
+    <h2>Talks</h2>
+    <h2>Reviewer Activities</h2>
+    <h2>Teaching</h2>
+    <h2>Personal Projects</h2>
+
+    <div class="object">
+        <div class="left">
+            <img src="img/ffxiv_completionist.jpeg" alt="FFXIV Completionist Logo" width="200">
+        </div>
+        <div class="right">
+            <h3>FFXIV Completionist</h3>
+            <p>Contributed to the French localization of an application and Excel spreadsheet for tracking player progression in Final Fantasy XIV. <br><br><a href="https://discord.com/invite/S456xWWVyd"><img src="img/discord.png"
+                        alt="Discord" width="30"></a>
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

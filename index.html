@@ -144,6 +144,146 @@
         border-radius: 8px;
         box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
     }
+
+    /* Media Queries - Responsive Design */
+    /* Tablette et Desktop (768px et plus) */
+    @media (max-width: 1024px) {
+        .presentation-container {
+            margin: 2em;
+            padding: 2em;
+            gap: 30px;
+        }
+
+        .object {
+            margin-left: 5%;
+            margin-right: 5%;
+            gap: 20px;
+        }
+
+        h2 {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+    }
+
+    /* Mobile (tablette vertically et téléphone) */
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 2em;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+
+        h3 {
+            font-size: 1.2em;
+        }
+
+        .presentation-container {
+            flex-direction: column;
+            align-items: center;
+            margin: 1em;
+            padding: 1.5em;
+            gap: 20px;
+            text-align: justify;
+        }
+
+        .left_pres img {
+            width: 180px;
+            height: auto;
+        }
+
+        .contact-info {
+            justify-content: center;
+            font-size: 0.85em;
+            gap: 10px;
+        }
+
+        .contact-info a {
+            padding: 0.4em 0.8em;
+            font-size: 0.9em;
+        }
+
+        .object {
+            flex-direction: column;
+            align-items: center;
+            margin-left: 1em;
+            margin-right: 1em;
+            padding: 1.5em;
+            gap: 15px;
+        }
+
+        .object .left img {
+            width: 150px;
+            height: auto;
+        }
+
+        .object .right {
+            text-align: center;
+        }
+
+        .object p {
+            font-size: 0.95em;
+        }
+    }
+
+    /* Petit téléphone (moins de 480px) */
+    @media (max-width: 480px) {
+        h1 {
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.2em;
+            margin-left: 3%;
+            margin-right: 3%;
+        }
+
+        h3 {
+            font-size: 1em;
+        }
+
+        .presentation-container {
+            margin: 0.5em;
+            padding: 1em;
+        }
+
+        .left_pres img {
+            width: 120px;
+        }
+
+        .contact-info {
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .contact-info a {
+            display: block;
+            width: 100%;
+            text-align: justify;
+        }
+
+        .object {
+            margin-left: 0.5em;
+            margin-right: 0.5em;
+            padding: 1em;
+        }
+
+        .object .left img {
+            width: 100px;
+        }
+
+        body {
+            font-size: 0.95em;
+        }
+    }
 </style>
 
 <head>

@@ -4,77 +4,60 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap');
 
-    :root {
-        --page-max-width: 1100px;
-        --space-side: 5%;
-        --text-main: #2c3e50;
-        --text-muted: #555;
-        --accent: #3498db;
-        --accent-strong: #2980b9;
-        --surface: #ffffff;
-        --surface-soft: #ecf0f1;
-    }
-
     /* Présentation - image à gauche, texte à droite, 5% de marge des deux côtés */
     body {
         margin: 0;
         padding: 0;
         font-family: 'Inter', sans-serif;
         background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-        color: var(--text-main);
+        color: #2c3e50;
         line-height: 1.6;
-        min-height: 100vh;
     }
 
     h1 {
-        font-family: 'Playfair Display', serif;
+        font-family: 'Roboto', serif;
         font-size: 3em;
         margin: 0 0 0.5em 0;
         color: #1a1a1a;
         font-weight: 700;
-        line-height: 1.2;
     }
 
     h2 {
-        font-family: 'Playfair Display', serif;
+        font-family: 'Roboto', serif;
         font-size: 2em;
-        max-width: var(--page-max-width);
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 10%;
+        margin-right: 10%;
         margin-top: 1.5em;
-        margin-bottom: 0.75em;
-        padding-left: var(--space-side);
-        padding-right: var(--space-side);
-        color: var(--text-main);
-        border-bottom: 3px solid var(--accent);
+        margin-bottom: 1.5em;
+        color: #2c3e50;
+        border-bottom: 3px solid #3498db;
         padding-bottom: 0.5em;
     }
 
     h3 {
-        font-family: 'Playfair Display', serif;
-        color: var(--text-main);
+        font-family: 'Roboto', serif;
+        color: #2c3e50;
         font-size: 1.5em;
     }
 
     a {
-        color: var(--accent);
+        color: #3498db;
         text-decoration: none;
         transition: color 0.3s ease;
     }
 
     a:hover {
-        color: var(--accent-strong);
+        color: #2980b9;
         text-decoration: underline;
     }
 
     .presentation-container {
         display: flex;
         align-items: center;
-        max-width: var(--page-max-width);
-        margin: 3em auto;
+        margin: 3em;
         gap: 40px;
         text-align: justify;
-        background: var(--surface);
+        background: white;
         padding: 3em;
         border-radius: 15px;
         box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
@@ -85,8 +68,6 @@
     }
 
     .left_pres img {
-        max-width: 100%;
-        height: auto;
         border-radius: 15px;
         box-shadow: 0 8px 25px rgba(52, 152, 219, 0.3);
         transition: transform 0.3s ease;
@@ -106,29 +87,32 @@
 
     .contact-info a {
         padding: 0.5em 1em;
-        background: var(--surface-soft);
+        background: #ecf0f1;
         border-radius: 25px;
         transition: all 0.3s ease;
     }
 
     .contact-info a:hover {
-        background: var(--accent);
+        background: #3498db;
         color: white;
     }
 
     /* Reste de la page - 10% de marge sur les côtés */
     .object {
-        max-width: var(--page-max-width);
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 10%;
+        margin-right: 10%;
         margin-bottom: 2em;
         display: flex;
         gap: 30px;
-        background: var(--surface);
+        background: white;
         padding: 2em;
         border-radius: 15px;
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
         transition: all 0.3s ease;
+    }
+
+    .object:hover {
+        box-shadow: 0 10px 40px rgba(52, 152, 219, 0.15);
     }
 
     .object .left {
@@ -136,8 +120,6 @@
     }
 
     .object .left img {
-        max-width: 100%;
-        height: auto;
         border-radius: 10px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     }
@@ -147,12 +129,8 @@
     }
 
     .object p {
-        color: var(--text-muted);
+        color: #555;
         margin: 0.5em 0;
-    }
-
-    li {
-        margin-bottom: 0.75em;
     }
 
     /* Images dans les liens - encadrées au survol */
@@ -162,7 +140,7 @@
     }
 
     a:hover img {
-        border: 3px solid var(--accent);
+        border: 3px solid #3498db;
         border-radius: 8px;
         box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
     }
@@ -177,16 +155,15 @@
         }
 
         .object {
-            margin-left: 2em;
-            margin-right: 2em;
+            margin-left: 5%;
+            margin-right: 5%;
             gap: 20px;
         }
 
         h2 {
-            padding-left: 2em;
-            padding-right: 2em;
+            margin-left: 5%;
+            margin-right: 5%;
         }
-
     }
 
     /* Mobile (tablette vertically et téléphone) */
@@ -198,10 +175,10 @@
 
         h2 {
             font-size: 1.5em;
+            margin-left: 5%;
+            margin-right: 5%;
             margin-top: 1em;
             margin-bottom: 1em;
-            padding-left: 1em;
-            padding-right: 1em;
         }
 
         h3 {
@@ -265,8 +242,8 @@
 
         h2 {
             font-size: 1.2em;
-            padding-left: 0.75em;
-            padding-right: 0.75em;
+            margin-left: 3%;
+            margin-right: 3%;
         }
 
         h3 {
@@ -290,7 +267,6 @@
         .contact-info a {
             padding: 0.4em 0.8em;
             font-size: 0.9em;
-            text-align: center;
         }
 
         .object {
@@ -355,9 +331,10 @@
     <h2>Talks</h2>
 
     <div class="object">
-        <ul>
-            <li><em>Geological Modeling using Kinetic Space Partition</em>, CGAL Dev Meeting 2025, Sophia Antipolis, France</li>
-        </ul>
+
+    <ul>
+        <li><em>Geological Modelling using Kinetic Space Partition</em>, CGAL Dev Meeting 2025, Sophia-Antipolis, France</li>
+    </ul>
     </div>
 
     <h2>Reviewer Activities</h2>
